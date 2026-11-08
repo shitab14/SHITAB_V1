@@ -1,12 +1,12 @@
 import React from 'react';
+import { AppProviders } from '@/app/providers/AppProviders';
+import { AppRoutes } from '@/app/routes/AppRoutes';
 
 export const App: React.FC = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
-      <h1 className="text-4xl md:text-6xl font-bold tracking-wider">
-        HELLO WORLD
-      </h1>
-    </div>
+    <AppProviders>
+      <AppRoutes />
+    </AppProviders>
   );
 };
 
